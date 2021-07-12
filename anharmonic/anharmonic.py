@@ -1,5 +1,3 @@
-from time import sleep
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -28,6 +26,7 @@ u = [np.zeros(N, dtype=np.float64)]  # starts at u[i+1/2]
 E = [np.zeros(N, dtype=np.float64)]
 v = [np.zeros(N, dtype=np.float64)]  # starts at v[i+1/2]
 
+# Right side damping boundary
 sigma = np.zeros(N)
 damping_range = 0.25
 damping_number = int(np.ceil(damping_range / L * N))
